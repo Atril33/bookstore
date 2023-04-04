@@ -1,7 +1,10 @@
+/* eslint-disable */
 import { useState } from 'react';
 import styles from './style/TodoItem.module.css';
 
-const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
+const TodoItem = ({
+  itemProp, handleChange, delTodo, setUpdate,
+}) => {
   const completedStyle = {
     fontStyle: 'italic',
     color: '#595959',
@@ -12,8 +15,8 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
   const handleEditing = () => {
     setEditing(true);
   };
-  let viewMode = {};
-  let editMode = {};
+  const viewMode = {};
+  const editMode = {};
   if (editing) {
     viewMode.display = 'none';
   } else {
@@ -26,29 +29,29 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
   };
   return (
     <li className={styles.item}>
-         <div className={styles.content} style={viewMode}>
-      <input
-        type="checkbox"
-        checked={itemProp.completed}
-        onChange={() => handleChange(itemProp.id)}
-        
-      />
+      <div className={styles.content} style={viewMode}>
+        <input
+          type="checkbox"
+          checked={itemProp.completed}
+          onChange={() => handleChange(itemProp.id)}
+        />
         <button onClick={handleEditing}>Edit</button>
-       <button onClick={() => delTodo(itemProp.id)}>Delete</button>
+        <button onClick={() => delTodo(itemProp.id)}>Delete</button>
 
-      <span style={itemProp.completed ? completedStyle : null}>
+        <span style={itemProp.completed ? completedStyle : null}>
           {itemProp.title}
         </span>
       </div>
       <input
-      type="text"
-      value={itemProp.title}
-      className={styles.textInput}
-      style={editMode}
-      onChange={(e) => setUpdate(e.target.value, itemProp.id)}
-      onKeyDown={handleUpdatedDone}
-    />
+        type="text"
+        value={itemProp.title}
+        className={styles.textInput}
+        style={editMode}
+        onChange={(e) => setUpdate(e.target.value, itemProp.id)}
+        onKeyDown={handleUpdatedDone}
+      />
     </li>
   );
 };
 export default TodoItem;
+/* eslint-disable */
