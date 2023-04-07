@@ -114,11 +114,6 @@ Clone this repository to your desired folder:
   npm install or npm i
 ```
 
-- Run build for prodction:
-```
-  npm run build
-```
-
 ### Usage
 
 To run the project, execute the following command:
@@ -128,13 +123,8 @@ To run the project, execute the following command:
 
 ```
 
-### Run tests
 
-To run tests, run the following command:
 
-```sh
-  npm run test
-```
 ### Usage
 _Run the project on Visual Studio Code Live Server._
 <!--
