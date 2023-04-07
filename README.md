@@ -46,7 +46,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magicians
+# 📖 Bookstore
 
 > This is _**React Todo App (SPA)**_.
 
@@ -109,7 +109,7 @@ Clone this repository to your desired folder:
 - Install this project with:
 
 ```sh
-  cd Math-Magicians
+  cd bookstore
 
   npm install or npm i
 ```
