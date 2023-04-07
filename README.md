@@ -1,4 +1,4 @@
-<div align="center"><h1>React Todo App</h1></div>
+<div align="center"><h1>BOOKSTORE</h1></div>
 <!--
 HOW TO USE :
 This is an example of how you may give instructions on setting up your project locally.
@@ -48,7 +48,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Bookstore
 
-> This is _**React Todo App (SPA)**_.
+> This is _**React Bookstore (SPA)**_.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
