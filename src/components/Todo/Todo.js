@@ -1,28 +1,13 @@
 import '../style/Style.css';
+import { useSelector } from 'react-redux';
 
 const MyTodo = () => {
-  const data = [
-    {
-      id: 1,
-      title: 'Setup development environment',
-      author: 'Syed',
-    },
-    {
-      id: 2,
-      title: 'Develop website and add content',
-      author: 'Atril',
-    },
-    {
-      id: 3,
-      title: 'Deploy to live server',
-      author: 'Syed Atril',
-    },
-  ];
+  const { bookData } = useSelector((store) => store.user);
   return (
     <>
-
       <div className="container">
-        {data.map((item) => (
+
+        {bookData.map((item) => (
           <div key={item.id}>
             <h2>{item.title}</h2>
             <p>
@@ -32,6 +17,7 @@ const MyTodo = () => {
             <button type="button" id="remove">Remove</button>
           </div>
         ))}
+
         <input type="text" id="title" placeholder="Your Title Here..." />
         <br />
         <input type="text" id="name" placeholder="Your Name Here..." />
