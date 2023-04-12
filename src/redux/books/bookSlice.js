@@ -9,15 +9,14 @@ const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    bookAdd: (state, action) => {
-      state.push(action.payload);
+    addBook: (state, action) => {
+      state.bookData.push(action.payload);
     },
-    bookRemove: (state, action) => {
-      const bookId = action.payload;
-      state.bookData.filter((item) => item.id !== bookId);
+    removeBook: (state, action) => {
+      state.bookData = state.bookData.filter((book) => book.item_id !== action.payload);
     },
   },
 });
 
-export const { bookAdd, bookRemove } = userSlice.actions;
+export const { addBook, removeBook } = userSlice.actions;
 export default userSlice.reducer;
