@@ -1,28 +1,44 @@
 import '../style/Style.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { addBook, removeBook } from '../../redux/books/bookSlice';
 
 const MyTodo = () => {
   const { bookData } = useSelector((store) => store.user);
+  const dispatch = useDispatch();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const newBook = {
+      title: formData.get('title'),
+      author: formData.get('author'),
+    };
+    dispatch(addBook(newBook));
+  };
   return (
     <>
       <div className="container">
+        <ul>
+          {bookData.map((item) => (
 
-        {bookData.map((item) => (
-          <div key={item.id}>
-            <h2>{item.title}</h2>
-            <p>
+            <li key={item.item_id}>
+              {item.title}
+              {' '}
               By
+              {' '}
               {item.author}
-            </p>
-            <button type="button" id="remove">Remove</button>
-          </div>
-        ))}
+              <button type="button" id="remove" onClick={() => dispatch(removeBook(item.item_id))}>Remove</button>
+            </li>
 
-        <input type="text" id="title" placeholder="Your Title Here..." />
-        <br />
-        <input type="text" id="name" placeholder="Your Name Here..." />
-        <br />
-        <button type="submit">Add Book</button>
+          ))}
+        </ul>
+        <form onSubmit={handleSubmit}>
+          <input type="text" name="title" placeholder="Title" />
+          <br />
+          <input type="text" name="author" placeholder="Author" />
+          <br />
+          <button type="submit">Add Book</button>
+        </form>
       </div>
     </>
   );

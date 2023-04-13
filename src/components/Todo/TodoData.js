@@ -1,18 +1,21 @@
 const data = [
   {
-    id: 1,
-    title: 'Setup development environment',
-    author: 'Syed',
+    item_id: 'item1',
+    title: 'The Great Gatsby',
+    author: 'John Smith',
+    category: 'Fiction',
   },
   {
-    id: 2,
-    title: 'Develop website and add content',
-    author: 'Atril',
+    item_id: 'item2',
+    title: 'Anna Karenina',
+    author: 'Leo Tolstoy',
+    category: 'Fiction',
   },
   {
-    id: 3,
-    title: 'Deploy to live server',
-    author: 'Syed Atril',
+    item_id: 'item3',
+    title: 'The Selfish Gene',
+    author: 'Richard Dawkins',
+    category: 'Nonfiction',
   },
 ];
 

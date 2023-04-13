@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const myCata = 'Categories';
 const initialState = {
-  bookName: myCata,
+  bookName: 'Categories',
 };
 
 const categoriesSlice = createSlice({
