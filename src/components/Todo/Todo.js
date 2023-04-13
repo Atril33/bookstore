@@ -10,7 +10,6 @@ const MyTodo = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const newBook = {
-      id: formData.get('item_id'),
       title: formData.get('title'),
       author: formData.get('author'),
     };
@@ -19,17 +18,20 @@ const MyTodo = () => {
   return (
     <>
       <div className="container">
+        <ul>
+          {bookData.map((item) => (
 
-        {bookData.map((item) => (
-          <div key={item.item_id}>
-            <h2>{item.title}</h2>
-            <p>
+            <li key={item.item_id}>
+              {item.title}
+              {' '}
               By
+              {' '}
               {item.author}
-            </p>
-            <button type="button" id="remove" onClick={() => dispatch(removeBook())}>Remove</button>
-          </div>
-        ))}
+              <button type="button" id="remove" onClick={() => dispatch(removeBook(item.item_id))}>Remove</button>
+            </li>
+
+          ))}
+        </ul>
         <form onSubmit={handleSubmit}>
           <input type="text" name="title" placeholder="Title" />
           <br />
