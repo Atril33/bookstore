@@ -1,8 +1,9 @@
 import React from 'react';
+import '../Style/Style.css';
 
 function Categories() {
   return (
-    <button type="button" className="btn btn-status">Check Status</button>
+    <center><button type="button" className="btn btn-status">Check Status</button></center>
   );
 }
 

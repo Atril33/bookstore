@@ -3,20 +3,20 @@ import { NavLink, Outlet } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <>
+    <div className="container">
       <header>
-        <nav className="nav-bar">
-          <div className="logo">BOOKSTORE CMS</div>
+        <div className="logo">BOOKSTORE CMS</div>
+        <nav>
           <ul>
-            <li><NavLink to="/">Books</NavLink></li>
-            <li><NavLink to="/Categories">Categories</NavLink></li>
+            <li className="link-item"><NavLink to="/" style={{ color: '#e8e8e8', fontSize: '17px' }}>Books</NavLink></li>
+            <li className="link-item"><NavLink to="/Categories" style={{ color: '#e8e8e8', fontSize: '17px' }}>Categories</NavLink></li>
           </ul>
         </nav>
       </header>
       <main>
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
 

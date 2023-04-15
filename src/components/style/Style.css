@@ -7,13 +7,207 @@
 
 body {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #f4f5f9;
+  font-family: sans-serif;
 }
 
-body * {
-  margin: 10px;
+.container {
+  width: 1000px;
+  height: auto;
+  min-height: 300px;
+  background: #fafafa;
+  border-radius: 5px;
+  padding-bottom: 100px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1.5px solid #f4f5f9;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.logo {
+  font-family: sans-serif;
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0a93ff;
+}
+
+nav ul,
+.link-item {
+  display: inline-block;
+}
+
+.link-item {
+  margin: 0 15px;
+}
+
+.book-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.books {
+  width: 80%;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  color: #888;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+
+.title {
+  color: #000;
+  font-size: 19px;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+
+.author {
+  color: #0a93ff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+.bttns {
+  display: flex;
+}
+
+.bttn {
+  margin-top: 7px;
+  color: #0a93ff;
+  cursor: pointer;
+  border-left: 1px solid #888;
+  padding: 0 20px;
+}
+
+.bttn:nth-child(1) {
+  border: none;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pro-text {
+  margin-top: -30px;
+  margin-left: -20px;
+}
+
+.pro-text h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.pro-text p {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.chapter-container {
+  display: flex;
+  border-left: 1px solid #a8a8a8;
+  padding-left: 30px;
+}
+
+.current-h2,
+.chapter-h3 {
+  color: #a8a8a8;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+.chapter-h3 {
+  color: #000;
+}
+
+.update-h4 {
+  width: 200px;
+  padding: 8px;
+  background: #0290ff;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.submit-form {
+  margin-left: 70px;
+}
+
+.title-main {
+  font-size: 22px;
+  color: #888;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.title-input,
+.author-input,
+#category {
+  width: 25%;
+  margin: 5px 10px;
+  background: #fff;
+  border: 1px solid #a8a8a8;
+  padding: 10px 8px;
+  font-size: 17px;
+  color: #888;
+  text-transform: capitalize;
+  border-radius: 2.5px;
+  outline: none;
+}
+
+.submit {
+  width: 100px;
+  border: none;
+  outline: none;
+  padding: 12px 8px;
+  background: #0290ff;
+  color: #fff;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.btn-status {
+  width: 200px;
+  margin-top: 150px;
+  background: #0290ff;
+  padding: 8px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
 }

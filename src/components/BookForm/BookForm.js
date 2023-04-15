@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook, addNewBook } from '../../redux/books/booksSlice';
+import '../Style/Style.css';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
@@ -29,13 +30,13 @@ const BookForm = () => {
   };
 
   return (
-    <div className="form-wrap">
+    <div className="submit-form">
       <form onSubmit={handleSubmit} className="form-container">
-        <label htmlFor="title">
+        <label htmlFor="title" className="title-main">
           Add New Book
           <br />
           <input
-            className="title"
+            className="title-input"
             id="title"
             type="text"
             placeholder="Title"
@@ -43,15 +44,13 @@ const BookForm = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
         </label>
-        <br />
         <input
-          className="author"
+          className="author-input"
           type="text"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <br />
         <select id="category" name="category" value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="">Please choose prefered category</option>
           <option value="fiction">Fiction</option>
@@ -59,8 +58,7 @@ const BookForm = () => {
           <option value="mystery">Mystery</option>
           <option value="sci-fi">Science Fiction</option>
         </select>
-        <br />
-        <button type="submit" className="submit">Submit</button>
+        <button type="submit" className="submit">Add BooK</button>
       </form>
     </div>
   );
