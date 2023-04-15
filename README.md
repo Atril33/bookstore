@@ -1,189 +1,129 @@
-<div align="center"><h1>BOOKSTORE</h1></div>
-<!--
-HOW TO USE :
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-- Authors
-- Future Features- 
- - Mobile version design
-- Desktop version design
-- Dynamic HTML for featured-speakers
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
+# bookstore
+<a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  
   <br/>
-</div>
 
-<!-- TABLE OF CONTENTS -->
+  <h3><b>Book Store Project</b></h3>
+
+</div>
 
 # 📗 Table of Contents
 
+- [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [🔭 Future Features](#future-features)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+# 📖 bookstore <a name="about-project"></a>
 
-# 📖 Bookstore
-
-> This is _**React Bookstore (SPA)**_.
+**bookstore** is a simple Project built through react npx create-react-app. User can interact by Adding New Books to the Bookstore. In future versions there is going to complete website version of Bookstore Project will be developed using react components and redux state management tool. 
 
 ## 🛠 Built With <a name="built-with"></a>
-- HTML
-- CSS
-- JS
+
+React and redux
+
 ### Tech Stack <a name="tech-stack"></a>
-
-> I Used Gitflow, modules, and advanced React & JS (ES6) in this React Todo App.
-
-<details>
-  <summary>HTML</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-     <li><a href="https://www.w3schools.com/css/">Javascript</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[React Todo App]**
-- **[Styling css with colors, borders, paddings, margins & sizes, etc]**
-_ **[React & javascript functions, modules, ES6 syntax, variables, etc]**
+- **[html css with JavaScript React and Redux ]**
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Comming Soon
+## 🚀 Live Demo <a name="live-demo"> </a>
+
+- [Live Demo](Will be available after final approval)
 
 
-<!-- GETTING STARTED -->
-<!-- AUTHORS -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
-In order to run this project you need the following tools:
-- Node.js in your computer
-- IDE(e.g.: Vscode,...)
-- Terminal
+Web Browser, Code Editor.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+Example commands:
+
 ```sh
-  cd your-prefered-folder
-  
-  git clone https://github.com/Atril33/bookstore.git
+  cd my-folder
+  git clone https://github.com/baqar-abbas/math-magician
 ```
 
 ### Install
-
-- Install this project with:
-
-```sh
-  cd bookstore
-
-  npm install or npm i
-```
+VS CODE, Dev Dependencies (Linters), npm Package Manager, CRA 
 
 ### Usage
+Able to Add New Books to the Bookstore and navigate through available links 
 
-To run the project, execute the following command:
+### Run tests
+Able to Add more books to the Bookstore 
 
-```sh
-  npm start
-
-```
-
-
-
-### Usage
-_Run the project on Visual Studio Code Live Server._
-<!--
-Example command:
-
-```sh
-  rails server
 ### Deployment
+The Project has been deployed in the link below.
 
-You can deploy this project using:
-Not Yet
-<!--
-Example:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```sh
+## 👥 Author <a name="authors"></a>
 
-```
- -->
+👤 **Baqar Abbas**
 
-# <a name="authors">Syed Atril</a>
+- GitHub: [@Baqar](https://github.com/baqar-abbas)
+- Twitter: [@BaqarAbbas9](https://twitter.com/BaqarAbbas9)
+- LinkedIn: [Baqar Abbas](https://www.linkedin.com/in/baqarlinkedin/)
 
-👤 **Syed Atril**
 
-- GitHub: [@githubhandle](https://github.com/Atril33)
-- Twitter: [@twitterhandle](https://twitter.com/AtrilSyed)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/syed-atril-831696248/)
-- Facebook [Facebook](https://web.facebook.com/profile.php?id=100073724910623)
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **[I will Add API for the quotes generator function]**
-- [x] **[I will Deploy this page after completing all things]**
-<!-- CONTRIBUTING -->
+- [ ] **[Functionality of Adding and deleting books will be implemented using components and redux toolkit. Going forward complete UI website will be developed with two links to navigate i.e Home and Categories.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project feel comfortable to endorse the authors. Give a star in github repository.
+If you like this project please consider leaving a review.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> We would like to thank my coding partners, mentors and Microverse for their support in building the project.
+I would like to thank my coding partner [@Salma Hassan Ibrahim]. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-> This project has [MIT license](https://github.com/Atril33/math-magicians/blob/development/LICENSE)
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<a name="readme-top"></a>
