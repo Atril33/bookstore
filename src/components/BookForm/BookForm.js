@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook, addNewBook } from '../../redux/books/booksSlice';
-import '../Style/Style.css';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');

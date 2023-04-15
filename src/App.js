@@ -5,10 +5,10 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom';
-import './components/Style/Style.css';
 import Layout from './components/Body/Layout';
 import Home from './components/BookAdd/Home';
 import Categories from './components/Categories/Categories';
+import './Style.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

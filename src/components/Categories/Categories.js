@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Style/Style.css';
 
 function Categories() {
   return (
