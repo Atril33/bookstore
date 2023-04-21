@@ -187,3 +187,4 @@ Feel free to check the [issues page](../../issues/).
 > This project has [MIT license](https://github.com/Atril33/math-magicians/blob/development/LICENSE)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
